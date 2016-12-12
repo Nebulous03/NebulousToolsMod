@@ -1,5 +1,6 @@
 package com.nebulous.nebulousTools;
 
+import com.nebulous.nebulousTools.blocks.FlightRing;
 import com.nebulous.nebulousTools.blocks.SparkyStick;
 import com.nebulous.nebulousTools.items.ItemBase;
 
@@ -11,8 +12,10 @@ public class ModItems {
 	public static void addItems(){
 		ItemBase nebulousIngot;
 		SparkyStick nebulousSparky;
+		FlightRing flightRing;
 		nebulousIngot = register(new ItemBase("nebulous_ingot"));
 		nebulousSparky = register(new SparkyStick("nebulous_sparky"));
+		flightRing = register(new FlightRing("nebulous_flightRing"));
 	}
 	
 	private static <T extends Item> T register(T item) {

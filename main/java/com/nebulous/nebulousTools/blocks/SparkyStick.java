@@ -19,14 +19,12 @@ public class SparkyStick extends ItemBase {
 	}
 	
 	@Override
-	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
-		System.out.println("SPARKY!!!!!!");
-		EntityLightningBolt bolt = new EntityLightningBolt(worldIn, playerIn.posX, playerIn.posY, playerIn.posZ, false);
-		worldIn.spawnEntityInWorld(bolt);
-		bolt.setPosition(playerIn.posX, playerIn.posY, playerIn.posZ);
+		EntityLightningBolt bolt = new EntityLightningBolt(world, pos.getX(), pos.getY(), pos.getZ(), false);
+		world.spawnEntityInWorld(bolt);
 		
-		return super.onItemUse(stack, playerIn, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+		return super.onItemUse(stack, player, world, pos, hand, facing, hitX, hitY, hitZ);
 	}
 	
 }

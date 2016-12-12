@@ -1,7 +1,9 @@
 package com.nebulous.nebulousTools;
 
+import com.nebulous.nebulousTools.events.ModEvents;
 import com.nebulous.nebulousTools.proxy.CommonProxy;
 
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -31,7 +33,8 @@ public class NebulousTools{
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		ModEvents events = new ModEvents();
+		FMLCommonHandler.instance().bus().register(events);
 	}
 
 	@Mod.EventHandler

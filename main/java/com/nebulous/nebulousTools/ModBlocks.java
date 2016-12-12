@@ -1,6 +1,8 @@
 package com.nebulous.nebulousTools;
 
 import com.nebulous.nebulousTools.blocks.BlockBase;
+import com.nebulous.nebulousTools.blocks.BlockContainerBase;
+import com.nebulous.nebulousTools.blocks.Machine;
 import com.nebulous.nebulousTools.items.ItemModelProvider;
 
 import net.minecraft.block.Block;
@@ -12,8 +14,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 	public static void addBlocks(){
-		BlockBase testBlock;
-		testBlock = register(new BlockBase(Material.ANVIL, "nebulous_block").setCreativeTab(CreativeTabs.REDSTONE));
+		BlockBase testBlock = register(new BlockBase(Material.ANVIL, "nebulous_block").setCreativeTab(CreativeTabs.REDSTONE));
+		BlockContainerBase machine = register(new Machine(Material.ANVIL, "nebuous_machine"));
 	}
 	
 	 private static <T extends Block> T register (T block, ItemBlock itemBlock) {
