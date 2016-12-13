@@ -2,6 +2,8 @@ package com.nebulous.nebulousTools;
 
 import com.nebulous.nebulousTools.blocks.BlockBase;
 import com.nebulous.nebulousTools.blocks.BlockBaseSlab;
+import com.nebulous.nebulousTools.blocks.BlockBaseSlab_Double;
+import com.nebulous.nebulousTools.blocks.BlockBaseSlab_Half;
 import com.nebulous.nebulousTools.blocks.BlockBaseStairs;
 import com.nebulous.nebulousTools.blocks.BlockContainerBase;
 import com.nebulous.nebulousTools.blocks.Machine;
@@ -21,7 +23,8 @@ public class ModBlocks {
 		BlockBase darkStoneBrick = register(new BlockBase(Material.ROCK, "darkStoneBrick").setCreativeTab(CreativeTabs.REDSTONE));
 		BlockBase darkStoneSmooth = register(new BlockBase(Material.ROCK, "darkStoneSmooth").setCreativeTab(CreativeTabs.REDSTONE));
 		BlockBaseStairs darkStoneBrickStairs = register(new BlockBaseStairs(darkStone.getDefaultState(), "darkStoneBrickStairs"));
-		BlockBaseSlab darkStoneBrickSlab = register(new BlockBaseSlab(Material.ROCK, "darkStoneBrickSlab"));
+		BlockBaseSlab darkStoneBrickSlab = register(new BlockBaseSlab_Half(Material.ROCK, "darkStoneBrickSlab"));
+		BlockBaseSlab darkStoneBrickSlab_double = register(new BlockBaseSlab_Double(Material.ROCK, "darkStoneBrickSlab_double"));
 		
 		BlockBase testBlock = register(new BlockBase(Material.ANVIL, "nebulous_block").setCreativeTab(CreativeTabs.REDSTONE));
 		//BlockContainerBase machine = register(new Machine(Material.ANVIL, "nebulous_machine").setCreativeTab(CreativeTabs.REDSTONE));

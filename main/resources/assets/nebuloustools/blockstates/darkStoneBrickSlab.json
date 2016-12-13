@@ -1,6 +1,6 @@
 {
     "variants": {
-        "half=bottom,variant=false": { "model": "nebuloustools:darkStoneBrickSlab" },
-        "half=top,variant=false": { "model": "nebuloustools:darkStoneBrickSlab" }
+        "half=bottom,variant=false": { "model": "nebuloustools:darkStoneBrickSlab_upper" },
+        "half=top,variant=false": { "model": "nebuloustools:darkStoneBrickSlab_lower" }
     }
 }

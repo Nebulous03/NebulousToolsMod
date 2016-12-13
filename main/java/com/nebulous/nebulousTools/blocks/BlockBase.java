@@ -5,24 +5,25 @@ import com.nebulous.nebulousTools.items.ItemModelProvider;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class BlockBase extends Block implements ItemModelProvider{
 	
 	protected String name;
-
+	
 	public BlockBase(Material materialIn, String name) {
 		super(materialIn);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.name = name;
+		
 	}
 
 	@Override
 	public void registerItemModel(Item itemBlock) {
 		NebulousTools.proxy.registerItemRenderer(itemBlock, 0, name);
-		
 	}
 	
 	@Override

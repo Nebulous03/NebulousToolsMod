@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=false": { "model": "nebuloustools:darkStoneBrick" },
+        "variant=true":    { "model": "nebuloustools:darkStoneBrick" }
+    }
+}
