@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "nebuloustools:blocks/darkStoneBrick",
+        "top": "nebuloustools:blocks/darkStoneBrick",
+        "side": "nebuloustools:blocks/darkStoneBrick"
+    }
+}

@@ -21,7 +21,6 @@ public class FlightRing extends ItemBase {
 	
 	public FlightRing(String name) {
 		super(name);
-		
 	}
 	
 	@Override

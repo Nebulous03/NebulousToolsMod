@@ -12,12 +12,18 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class Machine extends BlockContainerBase{
 
 	public Machine(Material materialIn, String name) {
 		super(materialIn, name);
+	}
+	
+	@Override
+	public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon) {
+		return true;
 	}
 	
 	@Override

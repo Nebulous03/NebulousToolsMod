@@ -21,7 +21,7 @@ public class ItemBase extends Item implements ItemModelProvider{
 	 }
 	 
 	 @Override
-	 public ItemBase setCreativeTab(CreativeTabs tab) {
+	 public Item setCreativeTab(CreativeTabs tab) {
 		 super.setCreativeTab(tab);
 		 return this;
 	 }
